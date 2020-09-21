@@ -2,9 +2,10 @@
 #input (confounder, mediator, correlated) - relates to the position of the adjustment variable X2 relative to X1 and the outcome. 
 #requires functions simulateGP and dplyr
 
-datagen <- function(model,nsnps,beta1,beta2){
+datagen <- function(model,beta1,beta2){
 
 n=100000
+nsnps = 500
 effs_x1 <- abs(rnorm(snps/2,0,0.1))
 effs_x2 <- abs(rnorm(snps/2,0,0.1))
 
