@@ -1,0 +1,11 @@
+#!/bin/bash
+# request resources:
+#PBS -l nodes=1:ppn=4
+#PBS -l walltime=1:00:00
+#!/usr/bin/env Rscript
+# on compute node, change directory to 'submission directory':
+cd ./Miniproject2/Nulltests
+# run your program, timing it for good measure:
+module add languages/R-3.6.3-gcc9.1.0
+#!/cm/shared/modulefiles/languages/R-3.6.3-gcc9.1.0/bin/Rscript
+Rscript ./Merge_med_null.R
