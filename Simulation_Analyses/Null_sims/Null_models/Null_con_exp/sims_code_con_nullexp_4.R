@@ -1,4 +1,4 @@
-
+library(stringr)
 library(simulateGP)
 library(MVMR)
 library(dplyr)
@@ -72,7 +72,7 @@ results = data.frame()
 snps = 250
 for(j in 1:reps){
 
-dat <- datagen("confounded",250,0,0.5) 
+dat <- datagen("confounder",250,0,0.5) 
 
 MR_dat = data.frame()
 

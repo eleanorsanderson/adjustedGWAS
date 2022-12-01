@@ -1,4 +1,4 @@
-
+library(stringr)
 library(simulateGP)
 library(MVMR)
 library(dplyr)
@@ -72,7 +72,7 @@ results = data.frame()
 snps = 250
 for(j in 1:reps){
 
-dat <- datagen("confounded",250,0,0.5) 
+dat <- datagen("confounder",250,0,0.5) 
 
 MR_dat = data.frame()
 
@@ -141,4 +141,4 @@ results[j,"mvmraj.nsnps"] <- length(MR_dat.mvmraj$bmi_b)
 }
 
 results
-write.csv(results, file = "results_con_nullexp_5.csv")
+write.csv(results, file = "/mnt/storage/scratch/bu19525/BristolPhD/MVMRproject/output/null/results_con_nullexp_5.csv")

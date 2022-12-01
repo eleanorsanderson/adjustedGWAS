@@ -1,3 +1,5 @@
+
+library(stringr)
 library(simulateGP)
 library(MVMR)
 library(dplyr)
@@ -65,7 +67,7 @@ datagen <- function(model,nsnps,beta1,beta2){
 }
 
 
-reps = 5
+reps = 1000
 
 results = data.frame()
 snps = 250
@@ -139,4 +141,4 @@ results[j,"mvmraj.nsnps"] <- length(MR_dat.mvmraj$bmi_b)
 
 }
 
-write.csv(results, file = "results_corr_pos_1.csv")
+write.csv(results, file = "/mnt/storage/scratch/bu19525/BristolPhD/MVMRproject/output/pos/outcome/results_corr_pos_1.csv")

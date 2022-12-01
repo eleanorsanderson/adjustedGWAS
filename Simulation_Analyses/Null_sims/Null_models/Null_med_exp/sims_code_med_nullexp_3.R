@@ -1,4 +1,4 @@
-
+library(stringr)
 library(simulateGP)
 library(MVMR)
 library(dplyr)
@@ -141,4 +141,4 @@ results[j,"mvmraj.nsnps"] <- length(MR_dat.mvmraj$bmi_b)
 }
 
 results
-write.csv(results, file = "results_med_nullexp_3.csv")
+write.csv(results, file = "/mnt/storage/scratch/bu19525/BristolPhD/MVMRproject/output/null/results_med_nullexp_3.csv")
