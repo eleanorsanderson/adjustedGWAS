@@ -1,6 +1,9 @@
 # adjustedGWAS
 Analyses of MR estimation with adjusted GWAS exposure estimates
 
+Code accompanies the paper: Multivariable MR can mitigate bias in two-sample MR using covariable-adjusted summary associations
+Authored by: Joe Gilbody, Carolina Borges, George Davey Smith and Eleanor Sanderson
+
 Joe Gilbody 
 Supervised by: Eleanor Sanderson
 
